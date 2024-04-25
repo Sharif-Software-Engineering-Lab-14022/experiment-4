@@ -17,8 +17,8 @@ public class MyStepdefs {
         calculator = new Calculator();
     }
 
-    @Given("^Two input values, (\\d+) and (\\d+)$")
-    public void twoInputValuesAnd(int arg0, int arg1) {
+    @Given("^Two input values, (-?\\d+) and (-?\\d+)$")
+    public void twoInputValuesWithPositiveOrNegativeNumbers(int arg0, int arg1) {
         value1 = arg0;
         value2 = arg1;
     }
